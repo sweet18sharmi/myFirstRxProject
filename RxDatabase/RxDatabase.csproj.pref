@@ -1,12 +1,11 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="app.config" />
+    <Element value="RxDatabase.rxtst" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="Database functions\InsertName.rxrec" />
     <Element value="RxDatabase.rxtst" />
-    <Element value="app.config" />
+    <Element value="Database functions\SelectDepartment.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

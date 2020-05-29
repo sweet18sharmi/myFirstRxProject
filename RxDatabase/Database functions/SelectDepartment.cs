@@ -79,12 +79,12 @@ namespace RxDatabase.Database_functions
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DemoApplication.DatabaseTab.BtnDepartmentList' at 11;9.", repo.DemoApplication.DatabaseTab.BtnDepartmentListInfo, new RecordItemIndex(0));
-            repo.DemoApplication.DatabaseTab.BtnDepartmentList.Click("11;9");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DemoApplication.Text1001' at 534;2.", repo.DemoApplication.Text1001Info, new RecordItemIndex(0));
+            repo.DemoApplication.Text1001.Click("534;2");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DepartmentList.ProjectManagement' at 93;9.", repo.DepartmentList.ProjectManagementInfo, new RecordItemIndex(1));
-            repo.DepartmentList.ProjectManagement.Click("93;9");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DemoApplication.DatabaseTab.CmbDepartment' at 241;149.", repo.DemoApplication.DatabaseTab.CmbDepartmentInfo, new RecordItemIndex(1));
+            repo.DemoApplication.DatabaseTab.CmbDepartment.Click("241;149");
             Delay.Milliseconds(200);
             
         }

@@ -28,7 +28,6 @@ rxversion="8.0">
 			id="34b9f228-153b-44b4-ae34-1e2747592b0f"
 			name="Database"
 			refimgid="5d3ffedf-dd03-464d-926b-daa52e98dd09"
-			refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@accessiblename='Test database']"
 			searchtimeout="30000ms">
 				/form[@controlname='RxMainFrame']/?/?/tabpage[@accessiblename='Test database']
 			</item>
@@ -57,9 +56,8 @@ rxversion="8.0">
 				id="cdb32e2f-3a94-4215-a4ce-eb4b5d575b1b"
 				name="FirstName"
 				refimgid="6cd75474-997a-4ac4-a60d-ea6f8abd41e7"
-				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabStandard']/text[@controlname='txtFirstName']/text[@accessiblename='First name']"
 				searchtimeout="30000ms">
-					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/?/?/text[@accessiblename='First name']
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/text[@controlname='txtFirstName']
 				</item>
 				<item
 				addcaps="text,accessible"
@@ -67,9 +65,8 @@ rxversion="8.0">
 				id="ee66a06e-163b-42b6-8abc-248006bf88ab"
 				name="LastName"
 				refimgid="cfc611c8-6169-4bf2-9aae-ebaa1315d782"
-				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabStandard']/text[@controlname='txtLastName']/text[@accessiblename='Last name']"
 				searchtimeout="30000ms">
-					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/?/?/text[@accessiblename='Last name']
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/text[@controlname='txtLastName']
 				</item>
 				<item
 				addcaps="text,control,nativewindow"
@@ -120,10 +117,50 @@ rxversion="8.0">
 				searchtimeout="30000ms">
 					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/text[@controlname='lblNumberOfPersonsNumber']
 				</item>
+				<item
+				addcaps="combobox,control,nativewindow"
+				capname="combobox"
+				id="cccd5c47-d670-4e3d-a296-c1c01405be86"
+				name="CmbDepartment"
+				refimgid="d2c33a78-9d43-47fb-b6bd-bd306c0dc8ad"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist[@controlname='RxTabcontrol']/tabpage[@controlname='RxTabStandard']/combobox[@controlname='cmbDepartment']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/combobox[@controlname='cmbDepartment']
+				</item>
 				<basepath>
 					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']
 				</basepath>
 			</folder>
+			<item
+			addcaps="tabpagelist,accessible"
+			capname="tabpagelist"
+			id="e2528fb8-5403-4f23-b9f9-a498607a2b14"
+			name="PageTabList"
+			refimgid="16710567-fbbe-4cf0-b72a-1b426965dffe"
+			refpath="/form[@controlname='RxMainFrame']/tabpagelist[@controlname='RxTabcontrol']/tabpagelist[@accessiblename='']"
+			searchtimeout="30000ms">
+				/form[@controlname='RxMainFrame']/?/?/tabpagelist[@accessiblename='']
+			</item>
+			<item
+			addcaps="tabpagelist,control,nativewindow"
+			capname="tabpagelist"
+			id="bac916b0-1922-4433-a4c3-72cc66394759"
+			name="RxTabcontrol"
+			refimgid="e6575950-a805-4956-814a-0c32b1cc6007"
+			refpath="/form[@controlname='RxMainFrame']/tabpagelist[@controlname='RxTabcontrol']"
+			searchtimeout="30000ms">
+				/form[@controlname='RxMainFrame']/tabpagelist[@controlname='RxTabcontrol']
+			</item>
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="52f2f01b-3973-410d-b24f-a4f388df6ed5"
+			name="Text1001"
+			refimgid="1d78bae6-e247-48be-bfd2-81744851d1df"
+			refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabStandard']/combobox/text[@controlid='1001']"
+			searchtimeout="30000ms">
+				/form[@controlname='RxMainFrame']//combobox[@controlname='cmbDepartment']/text[@controlid='1001']
+			</item>
 			<basepath>
 				/form[@controlname='RxMainFrame']
 			</basepath>
@@ -141,7 +178,7 @@ rkJggg==
 		id="57208867-ed11-4ec8-924b-0dc686980a77"
 		isrooted="True"
 		name="DepartmentList"
-		refpath="/list[@controlid='1000']"
+		refimgid="f024db72-3ca6-4c49-8e50-5fc257474f7d"
 		searchtimeout="30000ms"
 		usecache="True">
 			<item
@@ -150,12 +187,11 @@ rkJggg==
 			id="b32a1d4e-4dd5-4fee-b85a-452aaf6b98c3"
 			name="ProjectManagement"
 			refimgid="036e4b6c-560d-4c09-ba2d-0a22358179f4"
-			refpath="/list[@controlid='1000']/listitem[@text='Project Management']"
 			searchtimeout="30000ms">
-				/list[@controlid='1000']/listitem[@text='Project Management']
+				/list[@controlid='1001']/listitem[@text='Project Management']
 			</item>
 			<basepath>
-				/list[@controlid='1000']
+				/list[@controlid='1001']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGOfPtRkwAAACBjSFJN

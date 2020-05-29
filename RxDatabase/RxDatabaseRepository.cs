@@ -99,6 +99,9 @@ namespace RxDatabase
             RxDatabaseRepositoryFolders.DatabaseTabFolder _databasetab;
             RepoItemInfo _databaseInfo;
             RepoItemInfo _btnexitInfo;
+            RepoItemInfo _pagetablistInfo;
+            RepoItemInfo _rxtabcontrolInfo;
+            RepoItemInfo _text1001Info;
 
             /// <summary>
             /// Creates a new DemoApplication  folder.
@@ -109,6 +112,9 @@ namespace RxDatabase
                 _databasetab = new RxDatabaseRepositoryFolders.DatabaseTabFolder(this);
                 _databaseInfo = new RepoItemInfo(this, "Database", "?/?/tabpage[@accessiblename='Test database']", 30000, null, "34b9f228-153b-44b4-ae34-1e2747592b0f");
                 _btnexitInfo = new RepoItemInfo(this, "BtnExit", "button[@controlname='RxButtonExit']", 30000, null, "02058d54-efaf-4a1d-b09d-9d7d8538364d");
+                _pagetablistInfo = new RepoItemInfo(this, "PageTabList", "?/?/tabpagelist[@accessiblename='']", 30000, null, "e2528fb8-5403-4f23-b9f9-a498607a2b14");
+                _rxtabcontrolInfo = new RepoItemInfo(this, "RxTabcontrol", "tabpagelist[@controlname='RxTabcontrol']", 30000, null, "bac916b0-1922-4433-a4c3-72cc66394759");
+                _text1001Info = new RepoItemInfo(this, "Text1001", ".//combobox[@controlname='cmbDepartment']/text[@controlid='1001']", 30000, null, "52f2f01b-3973-410d-b24f-a4f388df6ed5");
             }
 
             /// <summary>
@@ -184,6 +190,78 @@ namespace RxDatabase
             }
 
             /// <summary>
+            /// The PageTabList item.
+            /// </summary>
+            [RepositoryItem("e2528fb8-5403-4f23-b9f9-a498607a2b14")]
+            public virtual Ranorex.TabPageList PageTabList
+            {
+                get
+                {
+                    return _pagetablistInfo.CreateAdapter<Ranorex.TabPageList>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PageTabList item info.
+            /// </summary>
+            [RepositoryItemInfo("e2528fb8-5403-4f23-b9f9-a498607a2b14")]
+            public virtual RepoItemInfo PageTabListInfo
+            {
+                get
+                {
+                    return _pagetablistInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RxTabcontrol item.
+            /// </summary>
+            [RepositoryItem("bac916b0-1922-4433-a4c3-72cc66394759")]
+            public virtual Ranorex.TabPageList RxTabcontrol
+            {
+                get
+                {
+                    return _rxtabcontrolInfo.CreateAdapter<Ranorex.TabPageList>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RxTabcontrol item info.
+            /// </summary>
+            [RepositoryItemInfo("bac916b0-1922-4433-a4c3-72cc66394759")]
+            public virtual RepoItemInfo RxTabcontrolInfo
+            {
+                get
+                {
+                    return _rxtabcontrolInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Text1001 item.
+            /// </summary>
+            [RepositoryItem("52f2f01b-3973-410d-b24f-a4f388df6ed5")]
+            public virtual Ranorex.Text Text1001
+            {
+                get
+                {
+                    return _text1001Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text1001 item info.
+            /// </summary>
+            [RepositoryItemInfo("52f2f01b-3973-410d-b24f-a4f388df6ed5")]
+            public virtual RepoItemInfo Text1001Info
+            {
+                get
+                {
+                    return _text1001Info;
+                }
+            }
+
+            /// <summary>
             /// The DatabaseTab folder.
             /// </summary>
             [RepositoryFolder("6634980e-930f-41f9-a6d0-229595c55fed")]
@@ -206,6 +284,7 @@ namespace RxDatabase
             RepoItemInfo _btndepartmentlistInfo;
             RepoItemInfo _btnaddentryInfo;
             RepoItemInfo _counterentriesInfo;
+            RepoItemInfo _cmbdepartmentInfo;
 
             /// <summary>
             /// Creates a new DatabaseTab  folder.
@@ -213,13 +292,14 @@ namespace RxDatabase
             public DatabaseTabFolder(RepoGenBaseFolder parentFolder) :
                     base("DatabaseTab", "?/?/tabpage[@controlname='RxTabStandard']", parentFolder, 30000, null, false, "6634980e-930f-41f9-a6d0-229595c55fed", "")
             {
-                _firstnameInfo = new RepoItemInfo(this, "FirstName", "?/?/text[@accessiblename='First name']", 30000, null, "cdb32e2f-3a94-4215-a4ce-eb4b5d575b1b");
-                _lastnameInfo = new RepoItemInfo(this, "LastName", "?/?/text[@accessiblename='Last name']", 30000, null, "ee66a06e-163b-42b6-8abc-248006bf88ab");
+                _firstnameInfo = new RepoItemInfo(this, "FirstName", "text[@controlname='txtFirstName']", 30000, null, "cdb32e2f-3a94-4215-a4ce-eb4b5d575b1b");
+                _lastnameInfo = new RepoItemInfo(this, "LastName", "text[@controlname='txtLastName']", 30000, null, "ee66a06e-163b-42b6-8abc-248006bf88ab");
                 _ageInfo = new RepoItemInfo(this, "Age", "?/?/text[@controlname='upDownEdit']", 30000, null, "305b1e85-498e-4d07-9051-6cd79362827e");
                 _selectmaleInfo = new RepoItemInfo(this, "SelectMale", "?/?/radiobutton[@controlname='rdbMale']", 30000, null, "a47a714c-11a3-4925-b181-0c2445fd1e45");
                 _btndepartmentlistInfo = new RepoItemInfo(this, "BtnDepartmentList", "combobox[@controlname='cmbDepartment']/button", 30000, null, "33397b0b-43c6-4daa-99a2-c7853656f16f");
                 _btnaddentryInfo = new RepoItemInfo(this, "BtnAddEntry", "button[@controlname='btnAddPerson']", 30000, null, "0716c660-ce8c-4fb8-a033-a58ae01bc4fa");
                 _counterentriesInfo = new RepoItemInfo(this, "CounterEntries", "text[@controlname='lblNumberOfPersonsNumber']", 30000, null, "2580fade-1b69-498e-a86e-74c7c8e8be71");
+                _cmbdepartmentInfo = new RepoItemInfo(this, "CmbDepartment", "combobox[@controlname='cmbDepartment']", 30000, null, "cccd5c47-d670-4e3d-a296-c1c01405be86");
             }
 
             /// <summary>
@@ -413,6 +493,30 @@ namespace RxDatabase
                     return _counterentriesInfo;
                 }
             }
+
+            /// <summary>
+            /// The CmbDepartment item.
+            /// </summary>
+            [RepositoryItem("cccd5c47-d670-4e3d-a296-c1c01405be86")]
+            public virtual Ranorex.ComboBox CmbDepartment
+            {
+                get
+                {
+                    return _cmbdepartmentInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CmbDepartment item info.
+            /// </summary>
+            [RepositoryItemInfo("cccd5c47-d670-4e3d-a296-c1c01405be86")]
+            public virtual RepoItemInfo CmbDepartmentInfo
+            {
+                get
+                {
+                    return _cmbdepartmentInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -427,7 +531,7 @@ namespace RxDatabase
             /// Creates a new DepartmentList  folder.
             /// </summary>
             public DepartmentListAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DepartmentList", "/list[@controlid='1000']", parentFolder, 30000, null, true, "57208867-ed11-4ec8-924b-0dc686980a77", "")
+                    base("DepartmentList", "/list[@controlid='1001']", parentFolder, 30000, null, true, "57208867-ed11-4ec8-924b-0dc686980a77", "")
             {
                 _projectmanagementInfo = new RepoItemInfo(this, "ProjectManagement", "listitem[@text='Project Management']", 30000, null, "b32a1d4e-4dd5-4fee-b85a-452aaf6b98c3");
             }

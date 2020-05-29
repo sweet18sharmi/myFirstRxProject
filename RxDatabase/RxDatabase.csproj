@@ -235,9 +235,9 @@
       <id>82ac098c-58f0-4587-bf31-5e369d981a56</id>
     </None>
     <None Include="Application functions\ExitAUT.rxrec">
-      <BoundTo>d913458f-7c5c-43e1-8158-d30a2fcdae94</BoundTo>
       <id>0fa09d16-5e4f-48cb-a4ab-0a87306ce036</id>
       <recordtableid>d7d4bacf-bec1-4321-8382-e30821ecf24f</recordtableid>
+      <BoundTo>d913458f-7c5c-43e1-8158-d30a2fcdae94</BoundTo>
     </None>
     <None Include="Application functions\StartAUT.rxrec">
       <BoundTo>d913458f-7c5c-43e1-8158-d30a2fcdae94</BoundTo>
