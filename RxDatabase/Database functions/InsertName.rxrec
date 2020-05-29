@@ -24,11 +24,6 @@ rxversion="8.0">
 	namespace="RxDatabase.Database_functions">
 	</codegen>
 	<variables>
-		<var
-		id="0bfaf745-1a2c-4f92-ae60-0b4a992262cf"
-		name="txtFirstName">
-			John
-		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -306,10 +301,6 @@ UAFFFFABRRRQAUUUUAf/2Q==
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="KeySequence"
-				variable="txtFirstName">
-				</binding>
 			</bindings>
 			<info
 			id="cdb32e2f-3a94-4215-a4ce-eb4b5d575b1b"

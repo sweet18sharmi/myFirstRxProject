@@ -148,9 +148,6 @@
     <Compile Include="AssemblyInfo.cs">
       <id>42374228-d3e4-442b-a573-d6c4b178a477</id>
     </Compile>
-    <Compile Include="Code Modules\InsertName.cs">
-      <id>22c9ed0c-e274-4715-b49a-6c5418b3a90c</id>
-    </Compile>
     <Compile Include="Database functions\AddEntry.cs">
       <BoundTo>1ea4f2fd-27b8-40ca-81e9-5be3771225f8</BoundTo>
       <DependentUpon>AddEntry.rxrec</DependentUpon>

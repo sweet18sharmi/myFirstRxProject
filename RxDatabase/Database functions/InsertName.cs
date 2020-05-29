@@ -41,7 +41,6 @@ namespace RxDatabase.Database_functions
         /// </summary>
         public InsertName()
         {
-            txtFirstName = "John";
         }
 
         /// <summary>
@@ -53,18 +52,6 @@ namespace RxDatabase.Database_functions
         }
 
 #region Variables
-
-        string _txtFirstName;
-
-        /// <summary>
-        /// Gets or sets the value of variable txtFirstName.
-        /// </summary>
-        [TestVariable("0bfaf745-1a2c-4f92-ae60-0b4a992262cf")]
-        public string txtFirstName
-        {
-            get { return _txtFirstName; }
-            set { _txtFirstName = value; }
-        }
 
 #endregion
 
@@ -96,8 +83,8 @@ namespace RxDatabase.Database_functions
             repo.DemoApplication.DatabaseTab.FirstName.Click("14;7");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$txtFirstName' with focus on 'DemoApplication.DatabaseTab.FirstName'.", repo.DemoApplication.DatabaseTab.FirstNameInfo, new RecordItemIndex(1));
-            repo.DemoApplication.DatabaseTab.FirstName.PressKeys(txtFirstName);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'John' with focus on 'DemoApplication.DatabaseTab.FirstName'.", repo.DemoApplication.DatabaseTab.FirstNameInfo, new RecordItemIndex(1));
+            repo.DemoApplication.DatabaseTab.FirstName.PressKeys("John");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DemoApplication.DatabaseTab.LastName' at 9;5.", repo.DemoApplication.DatabaseTab.LastNameInfo, new RecordItemIndex(2));

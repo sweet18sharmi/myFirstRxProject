@@ -4,7 +4,6 @@ rxversion="8.0">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testcase
-			datasource="CSNewConnector"
 			id="19803715-0124-454f-a8ea-4fe9f45f3c0f"
 			name="Data-driven_DB_Test">
 			</testcase>
@@ -24,6 +23,12 @@ rxversion="8.0">
 			name="teardown">
 			</teardown>
 			<testmodule
+			id="3eed9793-73d4-4fb6-a47b-557eec404730"
+			name="InsertName"
+			ref="5dbc6118-c253-45cd-9662-b2b1649e6373"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="448406b6-6c65-47dd-b2c6-5444adce2db4"
 			name="ValidateEntries"
 			ref="3403f9fd-88eb-4d86-8637-223b8e6aae26"
@@ -39,13 +44,6 @@ rxversion="8.0">
 			id="87116af2-95e4-478d-914f-606eaab569b1"
 			name="setup">
 			</setup>
-			<testmodule
-			enabled="False"
-			id="9fcc44a9-317f-4c67-9816-dadeaa65d164"
-			name="InsertName"
-			ref="5dbc6118-c253-45cd-9662-b2b1649e6373"
-			type="Recording">
-			</testmodule>
 			<testmodule
 			id="a0d9275c-36e4-4c4b-a65a-0c6f478d8d01"
 			name="InsertAge"
@@ -84,12 +82,6 @@ rxversion="8.0">
 			reportwriteinterval="30000ms">
 			</testsuite>
 			<testmodule
-			id="f5ca9813-5934-4cfe-b796-642637a7fd19"
-			name="InsertName"
-			ref="8fda60b2-aae1-4720-92f2-10cf3495c08a"
-			type="UserCode">
-			</testmodule>
-			<testmodule
 			id="fa08fcda-c7b7-494f-9d75-ce72cc847010"
 			name="SelectDepartment"
 			ref="9ee2fa61-dc2e-4322-8561-486a5e90f6ec"
@@ -115,11 +107,7 @@ rxversion="8.0">
 					id="19803715-0124-454f-a8ea-4fe9f45f3c0f"
 					name="Data-driven_DB_Test">
 						<testmodule
-						id="9fcc44a9-317f-4c67-9816-dadeaa65d164"
-						name="InsertName">
-						</testmodule>
-						<testmodule
-						id="f5ca9813-5934-4cfe-b796-642637a7fd19"
+						id="3eed9793-73d4-4fb6-a47b-557eec404730"
 						name="InsertName">
 						</testmodule>
 						<testmodule
