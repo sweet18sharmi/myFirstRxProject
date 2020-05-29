@@ -1,0 +1,17 @@
+﻿<Properties>
+  <Array name="active">
+    <Element value="app.config" />
+  </Array>
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="Database functions\InsertName.rxrec" />
+    <Element value="RxDatabase.rxtst" />
+    <Element value="app.config" />
+  </Array>
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <runOnBuild value="False" />
+    </Properties>
+    <Array name="recentusercodeselections" />
+  </Properties>
+</Properties>

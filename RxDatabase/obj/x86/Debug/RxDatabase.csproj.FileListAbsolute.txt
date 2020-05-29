@@ -1,0 +1,13 @@
+C:\Ranorex\RxSampleDataDrivenTesting\RxDatabase\bin\Debug\RxDatabase.rxtmg
+C:\Ranorex\RxSampleDataDrivenTesting\RxDatabase\bin\Debug\RxDatabase.rxtst
+C:\Ranorex\RxSampleDataDrivenTesting\RxDatabase\bin\Debug\RxDemoApp.exe
+C:\Ranorex\RxSampleDataDrivenTesting\RxDatabase\bin\Debug\RxTestDatabase.csv
+C:\Ranorex\RxSampleDataDrivenTesting\RxDatabase\bin\Debug\RxTestDatabase.mdb
+C:\Ranorex\RxSampleDataDrivenTesting\RxDatabase\bin\Debug\RxTestDatabase.xlsx
+C:\Ranorex\RxSampleDataDrivenTesting\RxDatabase\bin\Debug\RxDatabase.exe.config
+C:\Ranorex\RxSampleDataDrivenTesting\RxDatabase\bin\Debug\RxDatabase.exe
+C:\Ranorex\RxSampleDataDrivenTesting\RxDatabase\bin\Debug\RxDatabase.pdb
+C:\Ranorex\RxSampleDataDrivenTesting\RxDatabase\bin\Debug\Ranorex.Core.Resolver.dll
+C:\Ranorex\RxSampleDataDrivenTesting\RxDatabase\obj\x86\Debug\RxDatabase.csprojResolveAssemblyReference.cache
+C:\Ranorex\RxSampleDataDrivenTesting\RxDatabase\obj\x86\Debug\RxDatabase.exe
+C:\Ranorex\RxSampleDataDrivenTesting\RxDatabase\obj\x86\Debug\RxDatabase.pdb

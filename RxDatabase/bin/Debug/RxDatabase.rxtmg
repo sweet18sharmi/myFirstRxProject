@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="8.0">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="RxDatabase"
+      id="c3f72827-384d-44ee-85ce-1fe4492d990c"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="RxDatabase"
+      id="c3f72827-384d-44ee-85ce-1fe4492d990c"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
