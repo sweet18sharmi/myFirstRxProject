@@ -5,7 +5,6 @@
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="RxDatabase.rxtst" />
-    <Element value="Database functions\SelectDepartment.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">
