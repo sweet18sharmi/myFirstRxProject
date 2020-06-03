@@ -40,6 +40,16 @@ rxversion="8.0">
 			ref="f6ee8e43-c6db-4b07-8b70-cfbc0c85a5e5"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="6dc08294-a0b6-46e7-a458-ef51df5464e0"
+			name="TestCase2">
+			</testcase>
+			<testmodule
+			id="7a3a39bf-e921-4634-8a98-6ed506dd492a"
+			name="InsertName"
+			ref="5dbc6118-c253-45cd-9662-b2b1649e6373"
+			type="Recording">
+			</testmodule>
 			<setup
 			id="87116af2-95e4-478d-914f-606eaab569b1"
 			name="setup">
@@ -131,6 +141,14 @@ rxversion="8.0">
 						name="ValidateEntries">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="6dc08294-a0b6-46e7-a458-ef51df5464e0"
+					name="TestCase2">
+						<testmodule
+						id="7a3a39bf-e921-4634-8a98-6ed506dd492a"
+						name="InsertName">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="378f99ff-c5bd-42c1-8af1-fe4c7bcf0f09"
 					name="teardown">
@@ -197,7 +215,16 @@ rxversion="8.0">
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="TestRun">
+	default="RunCon1">
+		<testconfiguration
+		name="RunCon1">
+			<testcontainer
+			id="212c184f-6f1c-4a06-b2e2-451613c7037a">
+			</testcontainer>
+			<testcontainer
+			id="6dc08294-a0b6-46e7-a458-ef51df5464e0">
+			</testcontainer>
+		</testconfiguration>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
@@ -205,6 +232,9 @@ rxversion="8.0">
 			</testcontainer>
 			<testcontainer
 			id="212c184f-6f1c-4a06-b2e2-451613c7037a">
+			</testcontainer>
+			<testcontainer
+			id="6dc08294-a0b6-46e7-a458-ef51df5464e0">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

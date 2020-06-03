@@ -12,6 +12,6 @@
       <string>24689699-7a7a-4c48-a873-24b1096295eb</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution RxDatabase[Solution Items[]RxDatabase[Application functions[]Database functions[]RxDatabaseRepository.rxrep[]]]]&#xD;&#xA;Solution RxDatabase\RxDatabase\RxDatabase.rxtst&#xD;&#xA;Solution RxDatabase\RxDatabase\Database functions" />
+  <ProjectBrowserState value="[Solution RxDatabase[Solution Items[]RxDatabase[Application functions[]]]]&#xD;&#xA;Solution RxDatabase\RxDatabase\Code Modules&#xD;&#xA;Solution RxDatabase\Solution Items" />
   <StartupProject value="{45FD0FEF-8DB4-4A11-ADA6-383C61393483}" />
 </Properties>
