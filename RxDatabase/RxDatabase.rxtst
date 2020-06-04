@@ -233,9 +233,6 @@ rxversion="8.0">
 			<testcontainer
 			id="212c184f-6f1c-4a06-b2e2-451613c7037a">
 			</testcontainer>
-			<testcontainer
-			id="6dc08294-a0b6-46e7-a458-ef51df5464e0">
-			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
