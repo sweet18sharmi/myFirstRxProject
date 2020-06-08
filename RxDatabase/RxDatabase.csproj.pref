@@ -1,8 +1,12 @@
 ﻿<Properties>
-  <Array name="active" />
+  <Array name="active">
+    <Element value="RxDatabase.rxtst" />
+  </Array>
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="RxDatabase.rxtst" />
+    <Element value="Database functions\InsertName.rxrec" />
+    <Element value="Database functions\InsertAge.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">
