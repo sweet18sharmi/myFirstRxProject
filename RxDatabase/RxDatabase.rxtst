@@ -215,7 +215,7 @@ rxversion="8.0">
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="TestRun">
+	default="RunCon1">
 		<testconfiguration
 		name="RunCon1">
 			<testcontainer

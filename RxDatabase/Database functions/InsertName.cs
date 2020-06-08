@@ -73,27 +73,23 @@ namespace RxDatabase.Database_functions
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
-            Delay.SpeedFactor = 1.00;
+            Mouse.DefaultMoveTime = 0;
+            Keyboard.DefaultKeyPressTime = 20;
+            Delay.SpeedFactor = 0.00;
 
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DemoApplication.DatabaseTab.FirstName' at 14;7.", repo.DemoApplication.DatabaseTab.FirstNameInfo, new RecordItemIndex(0));
             repo.DemoApplication.DatabaseTab.FirstName.Click("14;7");
-            Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'John' with focus on 'DemoApplication.DatabaseTab.FirstName'.", repo.DemoApplication.DatabaseTab.FirstNameInfo, new RecordItemIndex(1));
             repo.DemoApplication.DatabaseTab.FirstName.PressKeys("John");
-            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DemoApplication.DatabaseTab.LastName' at 9;5.", repo.DemoApplication.DatabaseTab.LastNameInfo, new RecordItemIndex(2));
             repo.DemoApplication.DatabaseTab.LastName.Click("9;5");
-            Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Public' with focus on 'DemoApplication.DatabaseTab.LastName'.", repo.DemoApplication.DatabaseTab.LastNameInfo, new RecordItemIndex(3));
             repo.DemoApplication.DatabaseTab.LastName.PressKeys("Public");
-            Delay.Milliseconds(0);
             
         }
 
